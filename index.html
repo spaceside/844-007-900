@@ -1,16 +1,26 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <!-- Include the CesiumJS JavaScript and CSS files -->
-  <script src="https://cesium.com/downloads/cesiumjs/releases/1.145/Build/Cesium/Cesium.js"></script>
-  <link href="https://cesium.com/downloads/cesiumjs/releases/1.145/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
-  <meta http-equiv="refresh" content="0; url=https://sandcastle.cesium.com/standalone.html#c=nVZbc9o6EP4rGh46ZiaRcRpImoTMSSGTmAmQBpKUHp8HIa+xiixRSSYhnfz3jmxzMaEn08IMl91vL9+utSvXRVeKCINaoFmadAaIUApaIyPRQqYKMSkQ0RqMDkSOwb4UOISIpNxcZOChnIJATRRUYNGJx1eU9VnHv3/xvR7ztS/u6rTlN/zp7OtDq/MJw6LzI7yaWlDSTe4PR4+daW/gfe+2fe9m+OW5d+Wb0eM33mVe3H259EZJb9ptPyS9xy/sptWZfWv5jV575PWHXe0nPA5bfqM7HD33vncPu23/ufe1hkcmHv/g99HR7d1FciyuGrPv9/NvR32i9ctRo/U0ehnf3o3pS/ogg8ppIBCVQhs0Z/AECjWRgKeiJPghkzlBhWb/W1IYwgSooLKHfgYCZS8iWEIMk+IERYRr2MsVY6LhhixA3TI6BVVWRinnmioA8Tk1Ztt0ApLKcNsmlgnsQjMRyc/yuSwUZM4mWVbXwGe7zDQFAV0Zwq78NHCg1toXIaPEyC29YQlwJmBT+lo9DUT+zisKwjDDQKNmUVy8lJyuQVyafmqsL9RcWWAShs5GHy6tfOFU8whzohDlkk7LzWpZkZO3haZKgTBDlgA6WQI6KWdEtIkBHCmZ+FoeN2qeE1QOageN/drR/kE9qFRzhpSIi6yv1n6DuY5lysNCtakJRMHfddFFGKLbWBqpgHCmDaPoYxsNGQcdCA4GTbgcE54JwJwGwqhF/jyVFKiJyBNhZkUw+/rYLtQ5CSku7BH1Q6f+6fj4oO7ZLNCy4FmT8UyxhBk2LwpbCpLDCwaIEkNj5IBSUlXzlGybJAfM5aSQnwbiNe+z5RLDM5f0DZeS+M+ZHDU+Zkz+j0cpRF78P2Rg84dnSubZSXnD4Y3qb3gc1N/j8SbMX3HJ2TD7efl7Srv1f8ir4R16tca7/dkd66/I5bNiArIz6Pe2s/WluAMtU0Xzg72ZplevWSe5fUgMGWS4bRdXIDta2tlQADCXJHSKgNWNeUU5m82YmNxKvphIoW+YtuX7978Ms46wmnV4TngKGkdSXRIaO5l8gZrnOWcWIadIIoSICQgLBJ7lEarVYtPk8WMGiigaL5bjcgXEKxWegHmwUZ23k0/Ip3yOZqsjQs7a4YcPa+94JjWzXdPV1aLbRR3PUh07SwQqz+MS3Pm5RiG0cn+yK+Ya+Vpd/l7m/JrtmtW4/V1ftndDSduSvNhveVZFBfXJTo7ZfGdiDkpvjPyNdZc/SsVRiPhiKMuzaXVZkFGkwZxsZnYNJLTxmKHxHRET2ChmAekSE2Mj70jIiNCOd1jDteoecl1UGBd+3zPcP6xbQ9dFWbTCCjmGcVNdG3sHNVxDv3m5LsqyREygBAwojeyRQyYGlMgQeO6nWtSntGrwjh5ti1Y1HRARUqINBztLhnIy4cXtxwkqg1g+ofVksdcxo1LYQ1EqsrYih8ZApxAWk+XNiMXaumiiApa1eDsXDIKMOYRr2OlG299P8Pry6/5Nv4UeCefvp1h6YrbSy+NW9ipn2iw4nFv8PyyZSWVQqriDsWsgmXFiQLvjlE5tsbW2qZ65S5OzkM0RC5s7brOIcqJ1M6jYe+mAvUBQOT9zQzYvmdmRyMSkPwfFycJCYu/8JhdijM/c2NthZaTkY6I2PP4C" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Page Embed</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevents double scrollbars on the outer page */
+    }
+    iframe {
+      position: fixed;
+      inset: 0; /* Shorthand for top: 0; right: 0; bottom: 0; left: 0; */
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <div id="cesiumContainer"></div>
-  <script type="module">
-  
-  
-      </script>
+  <iframe src="https://sandcastle.cesium.com/standalone.html#c=nVZbc9o6EP4rGh46ZiaRcRpImoTMSSGTmAmQBpKUHp8HIa+xiixRSSYhnfz3jmxzMaEn08IMl91vL9+utSvXRVeKCINaoFmadAaIUApaIyPRQqYKMSkQ0RqMDkSOwb4UOISIpNxcZOChnIJATRRUYNGJx1eU9VnHv3/xvR7ztS/u6rTlN/zp7OtDq/MJw6LzI7yaWlDSTe4PR4+daW/gfe+2fe9m+OW5d+Wb0eM33mVe3H259EZJb9ptPyS9xy/sptWZfWv5jV575PWHXe0nPA5bfqM7HD33vncPu23/ufe1hkcmHv/g99HR7d1FciyuGrPv9/NvR32i9ctRo/U0ehnf3o3pS/ogg8ppIBCVQhs0Z/AECjWRgKeiJPghkzlBhWb/W1IYwgSooLKHfgYCZS8iWEIMk+IERYRr2MsVY6LhhixA3TI6BVVWRinnmioA8Tk1Ztt0ApLKcNsmlgnsQjMRyc/yuSwUZM4mWVbXwGe7zDQFAV0Zwq78NHCg1toXIaPEyC29YQlwJmBT+lo9DUT+zisKwjDDQKNmUVy8lJyuQVyafmqsL9RcWWAShs5GHy6tfOFU8whzohDlkk7LzWpZkZO3haZKgTBDlgA6WQI6KWdEtIkBHCmZ+FoeN2qeE1QOageN/drR/kE9qFRzhpSIi6yv1n6DuY5lysNCtakJRMHfddFFGKLbWBqpgHCmDaPoYxsNGQcdCA4GTbgcE54JwJwGwqhF/jyVFKiJyBNhZkUw+/rYLtQ5CSku7BH1Q6f+6fj4oO7ZLNCy4FmT8UyxhBk2LwpbCpLDCwaIEkNj5IBSUlXzlGybJAfM5aSQnwbiNe+z5RLDM5f0DZeS+M+ZHDU+Zkz+j0cpRF78P2Rg84dnSubZSXnD4Y3qb3gc1N/j8SbMX3HJ2TD7efl7Srv1f8ir4R16tca7/dkd66/I5bNiArIz6Pe2s/WluAMtU0Xzg72ZplevWSe5fUgMGWS4bRdXIDta2tlQADCXJHSKgNWNeUU5m82YmNxKvphIoW+YtuX7978Ms46wmnV4TngKGkdSXRIaO5l8gZrnOWcWIadIIoSICQgLBJ7lEarVYtPk8WMGiigaL5bjcgXEKxWegHmwUZ23k0/Ip3yOZqsjQs7a4YcPa+94JjWzXdPV1aLbRR3PUh07SwQqz+MS3Pm5RiG0cn+yK+Ya+Vpd/l7m/JrtmtW4/V1ftndDSduSvNhveVZFBfXJTo7ZfGdiDkpvjPyNdZc/SsVRiPhiKMuzaXVZkFGkwZxsZnYNJLTxmKHxHRET2ChmAekSE2Mj70jIiNCOd1jDteoecl1UGBd+3zPcP6xbQ9dFWbTCCjmGcVNdG3sHNVxDv3m5LsqyREygBAwojeyRQyYGlMgQeO6nWtSntGrwjh5ti1Y1HRARUqINBztLhnIy4cXtxwkqg1g+ofVksdcxo1LYQ1EqsrYih8ZApxAWk+XNiMXaumiiApa1eDsXDIKMOYRr2OlG299P8Pry6/5Nv4UeCefvp1h6YrbSy+NW9ipn2iw4nFv8PyyZSWVQqriDsWsgmXFiQLvjlE5tsbW2qZ65S5OzkM0RC5s7brOIcqJ1M6jYe+mAvUBQOT9zQzYvmdmRyMSkPwfFycJCYu/8JhdijM/c2NthZaTkY6I2PP4C" title="Hoia Culvert" allowfullscreen></iframe>
 </body>
 </html>
